@@ -1,7 +1,11 @@
+
 .square{
-   background-color: purple;
-   border: dashed;
-   font-family:cursive;
-   
+   border: 1px dotted #999;
+   font-size: 65px;
+   height: 94px;
+   width: 94px;
+   background-color: aquamarine;
+   color: blue;
+   font-family: cursive;
 }
 

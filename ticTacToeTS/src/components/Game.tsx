@@ -31,7 +31,7 @@ const moves = history.map((squares, move) => {
     if (move > 0) {
         description = 'Go to move #' + move;
     } else {
-        description = 'Go to game start';
+        description = 'RESET';
     }
     return (
         <li key={move}>

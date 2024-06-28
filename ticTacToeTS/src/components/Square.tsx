@@ -18,7 +18,7 @@ const Square = ({value, onSqareclick}:SquareProps) => {
   return (
     <>
     
-    <button className="square " onClick={onSqareclick}>
+    <button className="square" onClick={onSqareclick}>
         {value}
         
     </button>
