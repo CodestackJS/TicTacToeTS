@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
-import Square from './Square'
+import Square from './Square';
+
+
+interface BoardProps {
+  xIsNext: boolean;
+  squares: any;
+  onPlay:  (nextSquares:string[]) => void
+}
 
 
 
-
-const Board = ({ xIsNext, squares, onPlay }) => {
+const Board = ({ xIsNext, squares, onPlay }:BoardProps) => {
     // const [xIsNext, setXIsNext] = useState(true);
     // const [squares, setSquares] = useState(Array(9).fill(null));
 
-    const calculateWinner = (squares) => {
+    const calculateWinner = (squares:any) => {
         const lines = [
             [0, 1, 2],
             [3, 4, 5],
@@ -28,7 +34,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
           return null;
     }
 
-    const handleClick = (i) => {
+    const handleClick = (i:number) => {
         if (squares[i] || calculateWinner(squares)){
             return;
         }

@@ -1,7 +1,4 @@
-import React from 'react'
-import Square from './Components/Square'
-import Board from './Components/Board'
-import Game from './Components/Game'
+import Game from "./components/Game"
 
 const App = () => {
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Board from './Board'
+import Board from './Board';
+
 
 const Game = () => {
     // const [xIsNext, setXIsNext] = useState(true);
@@ -11,7 +12,7 @@ const Game = () => {
 
 
 
-const handlePlay = (nextSquares) => {
+const handlePlay = (nextSquares:string[]) => {
     // setHistory([...history, nextSquares]);
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
     setHistory(nextHistory);
@@ -20,7 +21,7 @@ const handlePlay = (nextSquares) => {
 
 }
 
-const jumpTo = (nextMove) => {
+const jumpTo = (nextMove:number) => {
     setCurrentMove(nextMove);
     // setXIsNext(nextMove % 2 === 0);
 }

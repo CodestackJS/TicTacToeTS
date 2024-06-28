@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 
+interface SquareProps {
+  onSqareclick: () => void;
+  value: string;
+}
 
 
-
-const Square = ({value, onSqareclick}) => {
+const Square = ({value, onSqareclick}:SquareProps) => {
 
 
     // const [value, setValue] = useState(null);
@@ -15,7 +18,7 @@ const Square = ({value, onSqareclick}) => {
   return (
     <>
     
-    <button className="square" onClick={onSqareclick}>
+    <button className="square " onClick={onSqareclick}>
         {value}
         
     </button>
